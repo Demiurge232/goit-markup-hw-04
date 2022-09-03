@@ -104,10 +104,11 @@ img {
 .portfol-link {
   text-decoration: none;
   color: currentColor;
+  display: block;
 }
 
-.portfol-item:hover,
-.portfol-item:focus {
+.portfol-link:hover,
+.portfol-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -302,12 +303,15 @@ img {
   gap: var(--indent);
 }
 
+.advantage-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .box-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 270px;
   height: 120px;
   margin: 0 0 30px;
   border-radius: 4px;
@@ -423,12 +427,15 @@ img {
   gap: 30px;
 }
 
+.client-item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
 .client-link {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 170px;
   height: 92px;
 
   border: 1px solid var(--socials-cl);
